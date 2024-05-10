@@ -17,7 +17,7 @@ const Cards = ({ home, setInputDiv, data }) => {
   const handleCompleteTask = async (id) => {
     try {
       const response=await axios.put(
-        `http://localhost:1000/api/v2/update-complete-task/${id}`,{},{headers}
+        `https://task-managment-ochre.vercel.app/api/v2/update-complete-task/${id}`,{},{headers}
       );
       console.log("here is the respinse of completed task",response)
       window.location.reload();
@@ -28,7 +28,7 @@ const Cards = ({ home, setInputDiv, data }) => {
   const handleImportant = async (id) => {
     try {
       const response=await axios.put(
-        `http://localhost:1000/api/v2/update-imp-task/${id}`,{},{headers}
+        `https://task-managment-ochre.vercel.app/api/v2/update-imp-task/${id}`,{},{headers}
       );
       console.log(response.data.messsage)
       window.location.reload();
@@ -39,7 +39,7 @@ const Cards = ({ home, setInputDiv, data }) => {
   const deleteTask = async (id) => {
     try {
       const response=await axios.delete(
-        `http://localhost:1000/api/v2/delete-task/${id}`,{},{headers}
+        `https://task-managment-ochre.vercel.app/api/v2/delete-task/${id}`,{},{headers}
       );
     console.log(response.data.messsage)
       window.location.reload();

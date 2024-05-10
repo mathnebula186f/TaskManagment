@@ -18,7 +18,7 @@ const InputData = ({ InputDiv, setInputDiv }) => {
       }
       console.log("here are the headers",headers);
       const response = await axios.post(
-        "http://localhost:1000/api/v2/create-task",
+        "https://task-managment-ochre.vercel.app/api/v2/create-task",
         Data,
         {
           headers,

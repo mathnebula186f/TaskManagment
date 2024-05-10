@@ -45,7 +45,7 @@ const Sidebar = () => {
     const fetch = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v2/get-all-tasks",
+          "https://task-managment-ochre.vercel.app/api/v2/get-all-tasks",
           {
             headers,
           }

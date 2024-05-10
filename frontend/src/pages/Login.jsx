@@ -30,7 +30,7 @@ const Login = () => {
         return;
       } else {
         const response = await axios.post(
-          "http://localhost:1000/api/v1/Login",
+          "https://task-managment-ochre.vercel.app/api/v1/Login",
           Data
         );
         setData({
